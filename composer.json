@@ -1,0 +1,64 @@
+{
+    "name": "final-gene/monolog-module",
+    "description": "Monolog ZF2 module",
+    "type": "library",
+    "homepage": "https://gitlab.devel.final-gene.de/final-gene/monolog-module",
+    "license": "proprietary",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://satis.final-gene.de"
+        }
+    ],
+    "authors": [
+        {
+            "name": "Frank Giesecke",
+            "email": "frank.giesecke@final-gene.de",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.0",
+        "zendframework/zend-config": "^2.5",
+        "zendframework/zend-modulemanager": "^2.5",
+        "monolog/monolog": "^1.18",
+        "raven/raven": "^0.13.0",
+        "zendframework/zend-code": "^3.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^4.8",
+        "zendframework/zend-filter": "^2.5",
+        "zendframework/zend-form": "^2.5",
+        "zendframework/zend-i18n": "^2.5",
+        "zendframework/zend-inputfilter": "^2.5",
+        "zendframework/zend-log": "^2.5",
+        "zendframework/zend-serializer": "^2.5",
+        "zendframework/zend-stdlib": "^2.5",
+        "zendframework/zend-test": "^2.5",
+        "zendframework/zend-validator": "^2.5",
+        "final-gene/phing-commons": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "FinalGene\\MonologModule\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "FinalGene\\MonologModuleTest\\": "tests/src"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "archive": {
+        "exclude": [
+            "/.*",
+            "/build.xml",
+            "/composer.*",
+            "/phpunit.*",
+            "/sonar-project.properties",
+            "/tests"
+        ]
+    }
+}
