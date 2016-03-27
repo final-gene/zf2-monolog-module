@@ -61,11 +61,11 @@ class Module implements BootstrapListenerInterface, ConfigProviderInterface, Dep
     public function registerMonologErrorLogger(MonologService $service, LoggerManager $loggerManager)
     {
         $monologConfig = $service->getConfig();
-        if (!isset($monologConfig['error_logger'])) {
+        if (!isset($monologConfig['error_handler'])) {
             return;
         }
 
-        $errorLogger = $monologConfig['error_logger'];
+        $errorLogger = $monologConfig['error_handler'];
         if (!$loggerManager->has($errorLogger)) {
             return;
         }
