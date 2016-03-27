@@ -16,8 +16,6 @@ The following example represents a possible configuration.
 
 ```php
 <?php
-use Monolog;
-
 return [
     'monolog' => [
 
