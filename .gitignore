@@ -2,3 +2,4 @@
 .idea/phing.xml
 .idea/dictionaries
 vendor/
+composer.lock
